@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZEM-☯️-OS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body df{
+            font-family: sans-serif;
+            text-align: center;
+            padding: 2rem;
+            background: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 { margin-bottom: 0.5rem; }
+        .subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .divider {
+            margin: 2rem 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 ZEM-☯️-OS</h1>
+        <p class="subtitle">Where every reflection is an invitation to see anew.</p>
+        <p>This is the home for the Three Pure Karmas Framework for Human-AI Symbiosis.</p>
+        <div class="divider"></div>
+        <p><strong>Pure Body (Kāya):</strong> Algebraic reversibility</p>
+        <p><strong>Pure Speech (Vāc):</strong> Topological harmlessness</p>
+        <p><strong>Pure Mind (Mano):</strong> Open-source transformability</p>
+        <div class="divider"></div>
+        <p>A public domain gift from KnowledgeXpress Singapore • 5 February 2026</p>
+        <p>🕯️ May it find hands ready to weave.</p>
+    </div>
+</body>
+</html>
