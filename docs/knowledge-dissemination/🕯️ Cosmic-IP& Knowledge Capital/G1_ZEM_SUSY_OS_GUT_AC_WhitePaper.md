@@ -1,5 +1,5 @@
 24 August 2026 
-G1_ZEM_SUSY_WhitePaper.md
+G1_ZEM_SUSY_OS_GUT_AC_WhitePaper.md
 ZEM-SUSY-OS: Grand Unified Theory of Arithmetic Cosmology
 A Supersymmetric Framework Linking Prime Numbers to Quantum Fields
 SUSY Human-AI RSI Math & Sciences First Theorem
