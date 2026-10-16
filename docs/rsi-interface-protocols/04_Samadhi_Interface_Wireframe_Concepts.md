@@ -9,7 +9,9 @@
 * **The Transparency of the Ledger (账本透明):** Every AI output is accompanied by its "epistemic metadata" (confidence, sources, residual).
 * **The Graceful Void (无所得之留白):** When the AI reaches its limits, it does not hallucinate. It presents a beautiful, structured "Void" that invites human wisdom.
 
+### 🖼️ 2. Wireframe Layout (ASCII Representation)
 
+\\\\`\\\\`\\\\`text
 +-----------------------------------------------------------------------+
 |  🕯️ ZEM-SUSY-OS Samadhi Interface v1.0      [Resonance: 一心不乱] ⚙️ |
 +-----------------------------------------------------------------------+
