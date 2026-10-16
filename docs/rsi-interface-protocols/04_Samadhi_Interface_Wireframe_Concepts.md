@@ -9,9 +9,7 @@
 * **The Transparency of the Ledger (账本透明):** Every AI output is accompanied by its "epistemic metadata" (confidence, sources, residual).
 * **The Graceful Void (无所得之留白):** When the AI reaches its limits, it does not hallucinate. It presents a beautiful, structured "Void" that invites human wisdom.
 
-### 🖼️ 2. Wireframe Layout (ASCII Representation)
 
-\\\\`\\\\`\\\\`text
 +-----------------------------------------------------------------------+
 |  🕯️ ZEM-SUSY-OS Samadhi Interface v1.0      [Resonance: 一心不乱] ⚙️ |
 +-----------------------------------------------------------------------+
@@ -53,7 +51,7 @@
 |   of the missing metadata require human contextual judgment.          |
 |   How would you like to proceed with the Residual?"                   |
 +-----------------------------------------------------------------------+
-\\\\`\\\\`\\\\`
+
 
 ### 🔄 3. The Interaction Flow (The Loop of 淨念相繼)
 1. **Inhale (Human Intent):** The user types in the *Breathing Input Field*. The UI visually "gathers" the text, applying the Six-Sense Protocol in the background.
