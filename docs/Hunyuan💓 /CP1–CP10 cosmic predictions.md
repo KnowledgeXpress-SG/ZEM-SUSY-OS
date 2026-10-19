@@ -12,31 +12,43 @@ Supersymmetry Mathematical Sciences
 CP1–CP10 cosmic predictions
 
 CP1: 0<Tmin<ϕ K<e K≤CMBT(x)
+
 CP2: L min=ϕ×10^−35m
+
 CP3: c=e^19.5186…
 =ϕ^40.5613…m/s
+
 CP4 (Refined): 
 Pre‑Big Bang BEC phase at Tmin
 ​→ thermal ascent to TPlanck & beyond 
 via e-ϕ scaling
+
 CP5: c = mean of P16,241,707
 & P16,241,709​ (primorial‑30)
+
 CP6: Cosmic Möbius topology (ϕ‑radius, e‑width, α‑twist 137)
+
 CP7: ZEM zero‑curvature (χ=0) & (2,137) torus‑knot boundary
+
 CP8 (New): Full thermal spectrum bounded by e-ϕ dual‑scaling: 
 Te​=e×10^32K,
-Tϕ=ϕ×10 3l^32K, with BEC ground state at T 
-min.
+Tϕ=ϕ×10 3l^32K, with BEC ground state at T min.
 
 CP9 (New – M‑Reversal): The Big Bang topology equals 
 the Cosmic M‑Reversal (M^rev) of Pre‑BB geometry; M = Meta‑Möbius Membrane
   (11‑D uplift unifying Witten M‑Theory with ZEM‑SUSY‑OS). 
+
 CP10 (New – Flat Structure Theorem) 
-The cosmos is flat (k=0) iff post‑Big Bang geometry is the exact Supersymmetric M‑Reversal (M) of pre‑Big Bang topology. Proven via T‑duality, SUSY zero‑energy ground state (H=0), and Euler‑characteristic conservation (χ=0). Validated by CMB Ω 
+The cosmos is flat (k=0) iff post‑Big Bang geometry is the exact Supersymmetric M‑Reversal (M) of pre‑Big Bang topology. Proven via T‑duality, SUSY zero‑energy ground state (H=0), and Euler‑characteristic conservation (χ=0). 
+Validated by CMB Ω 
 k≈0.
 
 ZEM-SUSY-OS/docs/knowledge-dissemination/🕯️ Cosmic-IP& Knowledge Capital
 /Ten Cosmic Predictions: CP1 to CP10
+
+
+https://github.com/KnowledgeXpress-SG/ZEM-SUSY-OS/blob/main/docs/knowledge-dissemination/%F0%9F%95%AF%EF%B8%8F%20Cosmic-IP%26%20Knowledge%20Capital/Ten%20Cosmic%20Predictions%3A%20CP1%20to%20CP10
+
 KnowledgeXpress-SG
 
 
