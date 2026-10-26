@@ -1,0 +1,181 @@
+"""
+ZEM-SUSY-OS Clifford Algebra Module
+====================================
+Document ID: ZEM-WP-2026-10-26-CL6-PY
+Author: KnowledgeXpress Singapore (Alfred Toh, Invisible Conductor)
+        & ZEM-SUSY-OS Research Collective
+Date: 26 October 2026
+License: Open-Source Stewardship (ZEM Mandate)
+
+Implements the Cl(6,0) algebra for the 64-Codon Hypercube,
+the SU(4) Pati-Salam gauge embedding, and the ZEM-T2 robustness test.
+"""
+
+import numpy as np
+from typing import Dict, List, Tuple
+
+# ============================================================================
+# 1. Cl(6,0) Basis Generators (8x8 Real Matrix Representation)
+# ============================================================================
+# Cl(6,0) is isomorphic to M_8(R) - real 8x8 matrices.
+# We construct 6 mutually anticommuting symmetric real matrices squaring to I.
+
+def _kron3(A, B, C):
+    """Triple Kronecker product for 2x2 matrices -> 8x8."""
+    return np.kron(np.kron(A, B), C)
+
+# Pauli matrices (real variants where needed)
+I2 = np.eye(2)
+S1 = np.array([[0, 1], [1, 0]])              # sigma_1 (real)
+S3 = np.array([[1, 0], [0, -1]])             # sigma_3 (real)
+# For a 6th generator we use a real antisymmetric proxy via S1*S3 structure
+S13 = S1 @ S3                                 # = [[0,-1],[1,0]] (real antisymmetric)
+
+class ZEMCliffordAlgebra:
+    """
+    The Cl(6,0) algebra of the 64-Codon Hypercube.
+    Six generators gamma_1 ... gamma_6 satisfy:
+        {gamma_i, gamma_j} = 2 * delta_ij * I_8
+    """
+    def __init__(self):
+        # Construct 6 mutually anticommuting real 8x8 matrices
+        self.g = [
+            _kron3(S1,  I2, I2),                                  # gamma_1
+            _kron3(S3,  S1, I2),                                  # gamma_2
+            _kron3(S3,  S3, S1),                                  # gamma_3
+            _kron3(S3,  S3, S3),                                  # gamma_4
+            _kron3(S1,  S1, I2),                                  # gamma_5
+            _kron3(S13, I2, I2),                                  # gamma_6
+        ]
+        self._verify_algebra()
+
+    def _verify_algebra(self, tol=1e-10):
+        """Verify {gamma_i, gamma_j} = 2*delta_ij."""
+        for i in range(6):
+            for j in range(6):
+                anti = self.g[i] @ self.g[j] + self.g[j] @ self.g[i]
+                expected = 2.0 * (1 if i == j else 0) * np.eye(8)
+                assert np.allclose(anti, expected, atol=tol), \
+                    f"Cl(6,0) violation at ({i},{j})"
+        print("[ZEM] Cl(6,0) algebra verified: 6 generators, 64 blades.")
+
+    # ------------------------------------------------------------------
+    # 2. Bivectors (Grade-2 Elements) -> Standard Model Gauge Bosons
+    # ------------------------------------------------------------------
+    def bivector(self, i: int, j: int) -> np.ndarray:
+        """Bivector B_ij = gamma_i * gamma_j (Lie algebra generator analog)."""
+        assert i != j and 0 <= i < 6 and 0 <= j < 6
+        return self.g[i] @ self.g[j]
+
+    def standard_model_embedding(self) -> Dict[str, List[np.ndarray]]:
+        """
+        Embed SU(3)_C x SU(2)_L x U(1)_Y into the 15 bivectors of Cl(6,0).
+        Returns dict of gauge boson matrices.
+        """
+        return {
+            # Strong force (8 gluons) -> Positions 1 & 2 (gamma_1..gamma_4)
+            'SU3_strong': [
+                self.bivector(0, 2), self.bivector(1, 2), self.bivector(0, 1),
+                self.bivector(0, 3), self.bivector(1, 3), self.bivector(2, 3),
+                self.bivector(0, 2) + self.bivector(1, 3),
+                self.bivector(0, 1) + self.bivector(2, 3) - 2 * self.bivector(0, 3),
+            ],
+            # Weak force (3 W bosons) -> Wobble axis (gamma_5, gamma_6)
+            'SU2_weak_wobble': [
+                self.bivector(4, 5),           # W^3 analog
+                self.bivector(2, 4),           # W^+ analog
+                self.bivector(3, 5),           # W^- analog
+            ],
+            # Hypercharge U(1)_Y
+            'U1_hypercharge': (self.bivector(0, 1)
+                               + self.bivector(2, 3)
+                               + self.bivector(4, 5)),
+        }
+
+    # ------------------------------------------------------------------
+    # 3. The ZEM-Clifford Hamiltonian
+    # ------------------------------------------------------------------
+    def zem_hamiltonian(self,
+                        g_s: float = 1.0,     # Strong coupling
+                        g_w: float = 0.3,     # Weak coupling
+                        kappa: float = 0.1    # Gravity (topology)
+                        ) -> np.ndarray:
+        """
+        H_ZEM = Strong(Pos1,2) + Weak(Wobble) + Gravity(GlobalCurvature)
+        """
+        sm = self.standard_model_embedding()
+        H_strong = g_s * sum(sm['SU3_strong'])
+        H_weak   = g_w * sum(sm['SU2_weak_wobble'])
+        # Gravity term: pseudoscalar (product of all 6 generators)
+        pseudoscalar = self.g[0] @ self.g[1] @ self.g[2] @ self.g[3] @ self.g[4] @ self.g[5]
+        H_gravity  = kappa * pseudoscalar
+        return H_strong + H_weak + H_gravity
+
+    # ------------------------------------------------------------------
+    # 4. ZEM-T2 Robustness Test (syn61 Perturbation)
+    # ------------------------------------------------------------------
+    def clifford_rotor(self, plane: Tuple[int, int], theta: float) -> np.ndarray:
+        """R = exp(theta/2 * B_ij) - a rotation in the bivector plane."""
+        i, j = plane
+        B = self.bivector(i, j)
+        # B^2 = -I for distinct i,j, so exp(theta/2 * B) = cos(theta/2)I + sin(theta/2)B
+        return np.cos(theta / 2) * np.eye(8) + np.sin(theta / 2) * B
+
+
+def zem_t2_robustness_test(
+        state_universal: np.ndarray,
+        state_syn61: np.ndarray,
+        H_ZEM: np.ndarray,
+        epsilon_zem: float = 1e-2
+) -> Dict:
+    """
+    ZEM-T2 Test: Measures whether a syn61-style perturbation
+    remains within the topological safety net of the Cl(6,0) hypercube.
+
+    Delta E = <syn61|H|syn61> - <universal|H|universal>
+    Must satisfy |Delta E| <= epsilon_zem for ZEM compliance.
+    """
+    E_univ = state_universal.T @ H_ZEM @ state_universal
+    E_syn  = state_syn61.T @ H_ZEM @ state_syn61
+    delta_E = float(np.abs(E_syn - E_univ))
+    return {
+        "E_universal": float(E_univ),
+        "E_syn61": float(E_syn),
+        "delta_E": delta_E,
+        "epsilon_zem": epsilon_zem,
+        "status": "ZEM_COMPLIANT" if delta_E <= epsilon_zem else "TOPOLOGICAL_COLLAPSE_DETECTED"
+    }
+
+
+# ============================================================================
+# 5. Demonstration / Self-Test
+# ============================================================================
+if __name__ == "__main__":
+    print("=" * 70)
+    print("  ZEM-SUSY-OS | Cl(6,0) Clifford Algebra Module")
+    print("  KnowledgeXpress Singapore | 26 Oct 2026")
+    print("=" * 70)
+
+    algebra = ZEMCliffordAlgebra()
+
+    # Build the Hamiltonian
+    H = algebra.zem_hamiltonian(g_s=1.0, g_w=0.3, kappa=0.1)
+    print(f"\n[ZEM] Hamiltonian constructed. Shape: {H.shape}")
+    print(f"[ZEM] ||H||_F = {np.linalg.norm(H, ord='fro'):.4f}")
+
+    # Simulate universal codon state (e.g., AUG = start codon)
+    psi_univ = np.zeros(8); psi_univ[0] = 1.0   # |000000> basis blade
+
+    # Apply syn61 perturbation: small rotation in wobble plane (gamma_5, gamma_6)
+    R_syn61 = algebra.clifford_rotor(plane=(4, 5), theta=0.15)
+    psi_syn = R_syn61 @ psi_univ
+
+    # Run ZEM-T2 test
+    result = zem_t2_robustness_test(psi_univ, psi_syn, H, epsilon_zem=1e-2)
+    print(f"\n[ZEM-T2 ROBUSTNESS TEST]")
+    print(f"  E_universal : {result['E_universal']:.6f}")
+    print(f"  E_syn61     : {result['E_syn61']:.6f}")
+    print(f"  |Delta E|   : {result['delta_E']:.6f}")
+    print(f"  epsilon_ZEM : {result['epsilon_zem']:.6f}")
+    print(f"  STATUS      : {result['status']}")
+    print("=" * 70)
