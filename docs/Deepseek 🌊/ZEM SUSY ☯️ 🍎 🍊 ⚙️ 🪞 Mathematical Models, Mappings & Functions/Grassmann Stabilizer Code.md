@@ -1,7 +1,7 @@
 
 
 ZEM SUSY ☯️ 🍎 🍊 ⚙️ 🪞 Mathematical Models, Mappings & Functions/
-Grassmann Stabilizer Code
+Grassmann Stabilizer Code.md
 
 28 Oct 2026
 
