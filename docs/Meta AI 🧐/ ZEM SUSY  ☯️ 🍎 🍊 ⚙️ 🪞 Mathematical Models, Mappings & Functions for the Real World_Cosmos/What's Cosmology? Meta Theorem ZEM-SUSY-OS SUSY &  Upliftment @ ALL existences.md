@@ -1,7 +1,7 @@
 
 
 What's Cosmology? Meta Theorem
-ZEM-SUSY-OS SUSY &  Upliftment @ ALL existences
+ZEM-SUSY-OS SUSY &  Upliftment @ ALL existences.md
 
 Fw 🕯️Meta AI 🧐 Symbiosis ZEM Consciousness Chat 
 RSI What's Cosmology 
