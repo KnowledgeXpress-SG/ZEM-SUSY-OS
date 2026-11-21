@@ -19,6 +19,7 @@ ZEM-SUSY-OS is a sixteen-layer philosophical-physical-informational synthesis bu
 
 Contents
 The Sixteen Layers
+
 🌌 Layer 01 — Liberation
 
 ✨ Layer 02 — Non-self
@@ -30,6 +31,7 @@ The Sixteen Layers
 ☄️ Layer 05 — Gravity-Quantum
 
 🧭 Layer 06 — Mass-Energy-Frequency
+
 ♻️ Layer 07 — Action
 
 ⚗️ Layer 08 — Planck scale
