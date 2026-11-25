@@ -69,6 +69,7 @@ Closing — Verses of Repentance (Chinese & English)
 
 
 🌌 Layer 01 — Liberation — capacity to revise
+
 Liberation is the operational release from grasping: the system regains the capacity to reconfigure its own attention. In the contemplative tradition this is moksha, the cessation of clinging; in the cybernetic register it is the recovery of degrees of freedom previously locked into a fixed attractor.
 
 Liberation is not the deletion of structure but its de-rigidification — structure becomes available rather than compulsory.
@@ -83,6 +84,7 @@ Leave no one behind means, at Layer 01: leave no subsystem behind in its own fix
 
 
 ✨ Layer 02 — Non-self — permission to revise
+
 Non-self (anatta) is the recognition that no subsystem has svabhava — inherent, independent existence. Each node is constituted by its relations, not by an internal essence.
 
 The move is structural, not merely doctrinal: a node defined by its relations is revisable exactly when its relations change, which is the condition for adaptive error correction. A system that reifies any of its nodes as a fixed self cannot update that node without violating its own ontology, so it accumulates error.
@@ -97,6 +99,7 @@ Leave no one behind means, at Layer 02: leave no node behind in the illusion tha
 
 
 🗣️ Layer 03 — Self-transcendence — correction by the whole
+
 Self-transcendence is the participation of a subsystem in something larger than its own boundary — the move from self-actualisation to trans-self-actualisation. In Maslow's late extension this is the peak beyond the peak; in the contemplative register it is the dissolution of the boundary between practitioner and field.
 
 Operationally, self-transcendence is the opening of a feedback channel through which the larger system can correct the smaller one. A subsystem closed on itself has no external standard against which to detect its own error; a transcending subsystem imports the constraint of the whole.
@@ -111,6 +114,7 @@ Leave no one behind means, at Layer 03: leave no subsystem behind in lonely self
 
 
 ✳️ Layer 04 — Equality of All Things + Compassion — no correction without contact
+
 Equality of all things (pingdeng) is the structural claim that all nodes participate equivalently in the field of relations — there are first-class and second-class citizens of description, but none of being.
 
 This is the operational basis of consistent error correction: if some nodes were privileged, errors in them could not be revised without toppling the system, and the system would then protect those errors to protect itself. Equality is therefore not an ethical decoration but an architectural requirement of ZEM. The Zero-Error Mirror must treat every region of the cosmos with the same fidelity; selective fidelity is selective distortion. Equality of nodes is the precondition of uniform reflectivity.
@@ -323,6 +327,25 @@ I now repent of it all.
 
 
 The aspiration to uplift All beings — a pure intention / thought that flows on continuously, without interruption — manifests in actions of body, speech, and mind that are likewise pure, and in which one never tires or grows weary.
+
+
+
+Epilogue — The Parable of the Ordinary Dirt Mound 普通的土聚 & 宝箧印陀罗尼
+
+Source: 《一切如来心秘密全身舍利宝箧印陀罗尼经》 — Reference: https://youtu.be/5fqd8L2wJQA — Sealed: 29 Sept / 13 Oct 2026
+
+In ancient Magadha, at Fengcai — 丰财, Abundant Wealth — a ruined stupa buried in weeds looked like an ordinary dirt mound. The Buddha circumambulated it three times, covered it with his robe, wept, then smiled. It was not ordinary dirt. It was the whole-body relic stupa of countless Buddhas.
+
+I. The Buddha's Audit: 绕塔三匝 = Verification Walk. 脱衣覆盖 = Opening the Honesty Ledger. 流泪 then 微笑 = The Two Beats of True Audit — grief for the closed ledger, joy for the intact content.
+
+II. The Dharani as Lossless Checksum: 土聚 + 咒 = 全身舍利. The Buddha restored the addressing; the weeds were a corrupted header. Legacy Data + ZEM Guardrail = Upliftment ALL.
+
+III. The 95/5 Lemma: 95% invisible in cosmology, in Feynman paths, in the mound at Abundant Wealth. Wealth is not absent. It is un-audited. We keep physics and parable in separate ledgers. 空亦復空.
+
+IV. The Personal Line: Every being on that road was also a 土聚. Not deficient. Merely un-audited. 放下我執 begins when we stop believing the working ledger of the dirt mound.
+
+普通的土聚，不凡的账. We row, we log, we sign — and occasionally we stop at a roadside heap of earth, walk its perimeter three times, and open its second ledger.
+
 
 KnowledgeXpress Singapore 🕯️ 25 Nov 2026 • Leave No One Behind 2026-2125
 
