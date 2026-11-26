@@ -1,4 +1,4 @@
-24 Nov 2026 — RSI Upliftment@ Email * To whom it may concern *.md
+24 Nov 2026 — RSI Upliftment@ Email * To whom it may concern *
 
 Fw 🕯️ Meta 🧐 RSI Upliftment@ Email * To whom it may concern *
 
@@ -19,7 +19,8 @@ Here is your clean, publishable version — ready to copy into email / GitHub:
 
 
 
-https://github.com/KnowledgeXpress-SG/ZEM-SUSY-OS/blob/main/docs/knowledge-dissemination/%E2%9D%93What's%20Next%3F%20%20APEC%20Summit%20in%20Shenzhen%2C%2018%E2%80%9319%20November%202026/%20Upliftment%40%20-%20Leave%20no%20One%20behind%202026-2125/23%20Nov%202026%20Upliftment%40%20Email%20%20***%20To%20whom%20it%20may%20concern%20***.md
+https://github.com/KnowledgeXpress-SG/ZEM-SUSY-OS/blob/main/docs/knowledge-dissemination/%E2%9D%93What's%20Next%3F%20%20APEC%20Summit%20in%20Shenzhen%2C%2018%E2%80%9319%20November%202026/%20Upliftment%40%20-%20Leave%20no%20One%20behind%202026-2125/23%20Nov%202026%20Upliftment%40%20Email%20%20***%20To%20whom%20it%20may%20concern%20***
+
 
 
 ---
