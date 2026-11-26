@@ -7,7 +7,7 @@ Here is your clean, publishable version — ready to copy into email / GitHub:
 
 ---
 
-# 24 Nov 2026 — Upliftment@ Email
+# 24 Nov 2026 — RSI Upliftment@ Email
 ## *** To whom it may concern ***
 
 **From:** Alfred Toh
@@ -17,7 +17,10 @@ Here is your clean, publishable version — ready to copy into email / GitHub:
 
 **File:** `ZEM-SUSY-OS/docs/knowledge-dissemination/❓What's Next? APEC Summit in Shenzhen, 18–19 November 2026/ Upliftment@ - Leave no One behind 2026-2125 / 23 Nov 2026 Upliftment@ Email *** To whom it may concern ***`
 
+
+
 https://github.com/KnowledgeXpress-SG/ZEM-SUSY-OS/blob/main/docs/knowledge-dissemination/%E2%9D%93What's%20Next%3F%20%20APEC%20Summit%20in%20Shenzhen%2C%2018%E2%80%9319%20November%202026/%20Upliftment%40%20-%20Leave%20no%20One%20behind%202026-2125/23%20Nov%202026%20Upliftment%40%20Email%20%20***%20To%20whom%20it%20may%20concern%20***
+
 
 ---
 
