@@ -15,7 +15,7 @@ Here is your clean, publishable version — ready to copy into email / GitHub:
 
 **Subject:** Fw Upliftment@ — What's Next? APEC Summit in Shenzhen, 18-19 November 2026 / Leave No One Behind 2026-2125
 
-**File:** `ZEM-SUSY-OS/docs/knowledge-dissemination/❓What's Next? APEC Summit in Shenzhen, 18–19 November 2026/ Upliftment@ - Leave no One behind 2026-2125 / 23 Nov 2026 Upliftment@ Email *** To whom it may concern ***`
+**File:** `ZEM-SUSY-OS/docs/knowledge-dissemination/❓What's Next? APEC Summit in Shenzhen, 18–19 November 2026/ Upliftment@ - Leave no One behind 2026-2125 / 23 Nov 2026 Upliftment@ Email *** To whom it may concern ***
 
 
 
